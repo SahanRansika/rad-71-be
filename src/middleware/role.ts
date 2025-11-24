@@ -9,6 +9,7 @@ export const requireRole = (roles: Role[]) => {
         message: "Unauthorized"
       })
     }
+
     const hasRole = roles.some((role) => req.user.roles?.includes(role))
     if (!hasRole) {
       return res.status(403).json({

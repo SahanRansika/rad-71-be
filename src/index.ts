@@ -5,7 +5,6 @@ import postRouter from "./routes/post.routes"
 import dotenv from "dotenv"
 import mongoose from "mongoose"
 dotenv.config()
-import cloudinary from "./config/cloudinary"
 
 const SERVER_PORT = process.env.SERVER_PORT
 const MONGO_URI = process.env.MONGO_URI as string

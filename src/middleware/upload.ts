@@ -1,7 +1,10 @@
-import multer from "multer";
+// multer.ts
+// files.ts
 
-// can disk or memory 
-// we choose memory 
+import multer from "multer"
+
+// can disk or memory
+// we choees memory
 const storage = multer.memoryStorage()
 
-export const upload = multer({storage}) // storage: storage
+export const upload = multer({ storage }) // storage: storage
